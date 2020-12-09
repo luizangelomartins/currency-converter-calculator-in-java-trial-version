@@ -14,8 +14,10 @@ public class CurrencyConverter {
     
     // MÉTODO PRINCIPAL - MAIN:
     public static void main(String[] args) {
-    
-        // MAIN
+
+        // DECLARAÇÃO E IMPLEMENTAÇÃO DO MENU
+        Menu exibicao_de_lista = new Menu();
+        exibicao_de_lista.exibir_menu();
         
     }
     
