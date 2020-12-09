@@ -17,6 +17,7 @@ public class Lista {
         
         
         // EXIBIÇÃO DA LISTA DE OPÇÕES:
+        System.out.println("0 - SAIR.");
         System.out.println("1 - REAL.");
         System.out.println("2 - EURO.");
         System.out.println("3 - IENE.");
