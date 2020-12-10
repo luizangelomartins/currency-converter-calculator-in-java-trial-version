@@ -10,6 +10,7 @@ package currencyconverter;
 
 
 // IMPORTAÇÃO DE BIBLIOTECAS:
+import funcoes.Calculo;
 import funcoes.Lista;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -23,6 +24,7 @@ public class Menu {
     int escolha = 0;
     int repetir = 0;
     Lista lista_de_opcoes = new Lista();
+    Calculo calculo_de_valores = new Calculo();
     
     
     // FUNÇÃO QUE IRÁ EXIBIR O MENU:
@@ -48,6 +50,61 @@ public class Menu {
                             repetir = 1;
                         break;
 
+                        // CASO "1" - REAL:
+                        case 1:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                        
+                        // CASO "2" - EURO:
+                        case 2:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                        
+                        // CASO "3" - IENE:
+                        case 3:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                            
+                        // CASO "4" - DÓLAR AMERICANO:
+                        case 4:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                        
+                        // CASO "5" - DÓLAR AUSTRALIANO:
+                        case 5:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                            
+                        // CASO "6" - DÓLAR CANADENSE:
+                        case 6:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                            
+                        // CASO "7" - FRANCO SUÍÇO:
+                        case 7:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                        
+                        // CASO "8" - LIBRA ESTERLINA:
+                        case 8:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                        
+                        // CASO "9" - LIRA TURCA:
+                        case 9:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                        
+                        // CASO "10" - PESO ARGENTINO:
+                        case 10:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                        
+                        // CASO "11" - RENMIMBI:
+                        case 11:
+                            calculo_de_valores.exibir_menu_calculo();
+                        break;
+                        
                         // VALORES INCORRETOS:
                         default:
                             System.err.println("POR FAVOR DIGITE UM VALOR VALIDO!");
@@ -61,7 +118,7 @@ public class Menu {
                 System.err.println("TENTE NOVAMENTE!");
 
             }
-        
+            
         }
             
     }
