@@ -21,8 +21,9 @@ public class Menu {
     
     
     // DECLARAÇÃO DE VARIAVEIS E OBJETOS:
-    int escolha = 0;
     int repetir = 0;
+    int escolha1 = 0;
+    String nome = "";
     Lista lista_de_opcoes = new Lista();
     Calculo calculo_de_valores = new Calculo();
     
@@ -34,6 +35,7 @@ public class Menu {
             
             try {
 
+                    nome = "";
                     System.out.println("");
                     System.out.println("MENU GERAL");
                     System.out.println("");
@@ -41,9 +43,9 @@ public class Menu {
                     System.out.println("");
                     System.out.printf("DIGITE SUA RESPOSTA: ");
                     Scanner escolha_usuario1 = new Scanner(System.in);
-                    escolha = escolha_usuario1.nextInt();
-
-                    switch( escolha ) {
+                    escolha1 = escolha_usuario1.nextInt();
+                    
+                    switch( escolha1 ) {
 
                         // CASO "0" - SAIR:
                         case 0:
@@ -52,57 +54,68 @@ public class Menu {
 
                         // CASO "1" - REAL:
                         case 1:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "REAL";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                         
                         // CASO "2" - EURO:
                         case 2:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "EURO";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                         
                         // CASO "3" - IENE:
                         case 3:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "IENE";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                             
                         // CASO "4" - DÓLAR AMERICANO:
                         case 4:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "DÓLAR AMERICANO";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                         
                         // CASO "5" - DÓLAR AUSTRALIANO:
                         case 5:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "DÓLAR AUSTRALIANO";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                             
                         // CASO "6" - DÓLAR CANADENSE:
                         case 6:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "DÓLAR CANADENSE";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                             
                         // CASO "7" - FRANCO SUÍÇO:
                         case 7:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "FRANCO SUÍÇO";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                         
                         // CASO "8" - LIBRA ESTERLINA:
                         case 8:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "LIBRA ESTERLINA";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                         
                         // CASO "9" - LIRA TURCA:
                         case 9:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "LIRA TURCA";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                         
                         // CASO "10" - PESO ARGENTINO:
                         case 10:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "PESO ARGENTINO";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                         
                         // CASO "11" - RENMIMBI:
                         case 11:
-                            calculo_de_valores.exibir_menu_calculo();
+                            nome = "RENMIMBI";
+                            System.err.println("VOCÊ TEM: " + calculo_de_valores.executar_calculo(nome) + " DA MOEDA INTERESSADA EM POSSE." );
                         break;
                         
                         // VALORES INCORRETOS:
